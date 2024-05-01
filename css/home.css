@@ -45,7 +45,7 @@ body{
   .product-card button {
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #492bc4;
     color: white;
     border: none;
     border-radius: 3px;
@@ -53,7 +53,7 @@ body{
   }
   
   .product-card button:hover {
-    background-color: #0056b3;
+    background-color: #492bc4;
   }
   .site-footer {
     background-color: white;
@@ -90,7 +90,7 @@ body{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #007bff;
+    background-color: #492bc4;
     color: #fff;
     border-radius: 50%;
     font-size: 20px;
@@ -98,7 +98,7 @@ body{
   }
   
   .social-icons a:hover {
-    background-color: #0056b3;
+    background-color: #492bc4;
   }
   #cart {
     float: left;
