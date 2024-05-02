@@ -11,16 +11,15 @@
     <h1 class= "title" > Confirm order and pay</h1>
      <p>please make the payment, after that you can enjoy all the features and benefits</p>
 
-    <form action="" class="form row">
-        <input type="text" name="" id="name_card" class="form-control row" placeholder="card_number"><br>
-        <input type="text" name="" id="" class="form-control row" placeholder="Expiry">
-        <input type="text" name="" id="" class="form-control row" placeholder="CVV">
-        <input type="text" name="" id="" class="form-control row" placeholder="Street Address"><br>
-        <input type="text" name="" id="" class="form-control row" placeholder="City">
-        <input type="text" name="" id="" class="form-control row"  placeholder="State/Province"><br>
-        <input type="text" name="" id="" class="form-control row" placeholder="Zip code">
-        <input type="text" name="" id="" class="form-control r" placeholder="card_number">
-        <button class="btn btn-success ">Pay $840</button>
+    <form action="Payment_page.php" class="form row" method="post">
+        <input type="text" name="card_num" id="name_card" class="form-control row" placeholder="card_number"><br>
+        <input type="text" name="expiry" id="" class="form-control row" placeholder="Expiry">
+        <input type="text" name="cvv" id="" class="form-control row" placeholder="CVV">
+        <input type="text" name="street_add" id="" class="form-control row" placeholder="Street Address"><br>
+        <input type="text" name="city" id="" class="form-control row" placeholder="City">
+        <input type="text" name="state" id="" class="form-control row"  placeholder="State/Province"><br>
+        <input type="text" name="zip" id="" class="form-control row" placeholder="Zip code">
+        <button class="btn btn-success " type="submit"> $840</button>
     </form>
     <div class="container">
         <h5>You have to pay</h5>
@@ -35,3 +34,30 @@
         
     </body>
 </html>
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = ""; 
+$dbname = "pay_cart";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$card_num= $_POST['card_num'];
+$expiry = $_POST['expiry'];
+$cvv = $_POST['cvv'];
+$street_add = $_POST['street_add'];
+$city=$_POST['city'];
+$state=$_POST['state'];
+$zip=$_POST['zip'];
+
+
+
+$sql = "INSERT INTO pay (card_num, exipiry, cvv, street_address, city, `_State`, `zip code`) 
+        VALUES ('$card_num', '$expiry', '$cvv', '$street_add', '$city', '$state', '$zip')";
+$conn->query($sql);
+$conn->close();
+?>
