@@ -155,7 +155,7 @@
               // Save the updated cart back to localStorage
               localStorage.setItem('cart', JSON.stringify(cart));
               // Redirect the user to the shopping cart page
-²              window.location.href = 'http://127.0.0.1:5500/html/shopping%20chart.html';
+          window.location.href = 'http://127.0.0.1:5500/html/shopping%20chart.html';
           }
 
       }

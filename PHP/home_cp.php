@@ -58,7 +58,6 @@
     </div>
   </nav>
 
-  <main>
     <div class="container">
         <div class="sidebar">
             <!-- Sidebar with category list -->
@@ -103,7 +102,6 @@
             <!-- End of publicity cards -->
         </div>
     </div>
-</main>
 
 
   <footer class="site-footer">
