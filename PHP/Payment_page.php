@@ -19,7 +19,7 @@
         <input type="text" name="city" id="" class="form-control row" placeholder="City">
         <input type="text" name="state" id="" class="form-control row"  placeholder="State/Province"><br>
         <input type="text" name="zip" id="" class="form-control row" placeholder="Zip code">
-        <button class="btn btn-success " type="submit"> $840</button>
+        <button class="btn btn-success " type="submit"> PAY</button>
     </form>
     <div class="container">
         <h5>You have to pay</h5>
@@ -34,30 +34,40 @@
         
     </body>
 </html>
-<?php 
+<?php
 $servername = "localhost";
 $username = "root";
-$password = ""; 
+$password = "";
 $dbname = "pay_cart";
 
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$card_num= $_POST['card_num'];
-$expiry = $_POST['expiry'];
-$cvv = $_POST['cvv'];
-$street_add = $_POST['street_add'];
-$city=$_POST['city'];
-$state=$_POST['state'];
-$zip=$_POST['zip'];
+// Retrieve form data
+$card_num = isset($_POST['card_num']) ? $_POST['card_num'] : '';
+$expiry = isset($_POST['expiry']) ? $_POST['expiry'] : '';
+$cvv = isset($_POST['cvv']) ? $_POST['cvv'] : '';
+$street_add = isset($_POST['street_add']) ? $_POST['street_add'] : '';
+$city = isset($_POST['city']) ? $_POST['city'] : '';
+$state = isset($_POST['state']) ? $_POST['state'] : '';
+$zip = isset($_POST['zip']) ? $_POST['zip'] : '';
 
 
 
-$sql = "INSERT INTO pay (card_num, exipiry, cvv, street_address, city, `_State`, `zip code`) 
+// SQL query to insert data into pay table
+$sql = "INSERT INTO pay (card_num, exipiry, cvv, street_address, city, `_state`, `zip code`) 
         VALUES ('$card_num', '$expiry', '$cvv', '$street_add', '$city', '$state', '$zip')";
-$conn->query($sql);
+
+if ($conn->query($sql) === TRUE) {
+    echo "";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
 $conn->close();
 ?>

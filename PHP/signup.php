@@ -36,10 +36,10 @@
   </div>
 </body>
 </html>
-<?php 
+<?php
 $servername = "localhost";
 $username = "root";
-$password = ""; 
+$password = "";
 $dbname = "user2";
 
 // Create connection
@@ -51,18 +51,14 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$passwd = $_POST['passwd'];
-
-// Validate password confirmation
-if ($password !== $pss) {
-    die("Passwords do not match");
-}
+$name = isset($_POST['name']) ? $_POST['name'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+$password = isset($_POST['password']) ? $_POST['password'] : '';
+$passwd = isset($_POST['passwd']) ? $_POST['passwd'] : '';
 
 // SQL query to insert data into user2 table
 $sql = "INSERT INTO user2 (name, email, password, passwd) VALUES ('$name', '$email', '$password', '$passwd')";
 $conn->query($sql);
+
 $conn->close();
 ?>

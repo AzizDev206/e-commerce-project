@@ -20,7 +20,7 @@
         <div class="cart_buttons">
             <button class="cart_button_clear" onclick="clearCart()">Clear Cart</button>
             <button class="cart_button_checkout" onclick="checkout()">Checkout</button>
-            <button class="btn btn-success" onclick="redirection()"> Payer </button>
+            <button class="btn btn-success" onclick="redirection()"> Pay </button>
         </div>
     </div>
    
@@ -76,7 +76,7 @@
         }
         function redirection() {
     // Changez "home.html" pour le nom de la page vers laquelle vous voulez rediriger l'utilisateur.
-    window.location.href = "../html/payment_page.html";
+    window.location.href = "../php/Payment_page.php";
 }
         // Initial rendering of the cart
         renderCart();

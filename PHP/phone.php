@@ -23,10 +23,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../php/home_cp.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="home_cp.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../php/login.php">login</a>
+            <a class="nav-link" href="login.php">login</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -50,8 +50,8 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <a href="shopping chart.php" class="cart-link"> 
-          <img class="chart" src="../image/shopping-cart.png"> Cart
+        <a href="shopping chart.php" class="cart-link"> <!-- Link to the shopping cart page -->
+          <img class="chart" src="../image/shopping-cart.png"> Panier
         </a>
       </div>
     </div>
@@ -59,50 +59,50 @@
 
   <div class="product-container">
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 1">
+      <img src="https://img.fruugo.com/product/5/54/361623545_max.jpg" alt="Product 1">
       <h3>Product 1</h3>
       <p>$19.99</p>
       <button onclick="addToCart(1)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="../image/th (9).jpeg" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="../image/th (11).jpeg" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="../image/th (12).jpeg" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <!-- Repeat product cards for other products -->
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 1">
+      <img src="../image/th (13).jpeg" alt="Product 1">
       <h3>Product 1</h3>
       <p>$19.99</p>
       <button onclick="addToCart(1)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="../image/th (15).jpeg" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="../image/th (11).jpeg" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="../image/th (10).jpeg" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->

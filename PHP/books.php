@@ -23,10 +23,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../php/home_cp.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="home_cp.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../php/login.php">login</a>
+            <a class="nav-link" href="login.html">login</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -50,8 +50,8 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <a href="shopping chart.php" class="cart-link"> 
-          <img class="chart" src="../image/shopping-cart.png"> Cart
+        <a href="shopping chart.php" class="cart-link"> <!-- Link to the shopping cart page -->
+          <img class="chart" src="../image/shopping-cart.png"> Panier
         </a>
       </div>
     </div>
@@ -59,55 +59,53 @@
 
   <div class="product-container">
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 1">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.CdQ7tawP-PwtowDd_5pqmgHaLc&pid=Api&P=0&h=180" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$19.99</p>
+      <button onclick="addToCart(1)">Add to Cart</button> 
+    </div>
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.hb2Er886224jy32SqDs1pgHaMO&pid=Api&P=0&h=180" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$24.99</p>
+      <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
+    </div>
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.-X73xiMtaZlopU7-2IkeNwHaKo&pid=Api&P=0&h=180" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$24.99</p>
+      <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
+    </div>
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.LzPM7UDdD8LVUN6a5p9EHQAAAA&pid=Api&P=0&h=180" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$24.99</p>
+      <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
+    </div>
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.i3pWbVnTLkT1xk4jXISVfAHaLU&pid=Api&P=0&h=180" alt="Product 1">
       <h3>Product 1</h3>
       <p>$19.99</p>
       <button onclick="addToCart(1)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.kO1IzGwDSsUxWSxlYbu07gHaJQ&pid=Api&P=0&h=180" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.FCBk6tf9LHEztUYbOyYmggHaLo&pid=Api&P=0&h=180" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
     <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.FCBk6tf9LHEztUYbOyYmggHaLo&pid=Api&P=0&h=180" alt="Product 2">
       <h3>Product 2</h3>
       <p>$24.99</p>
       <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
     </div>
-    <!-- Repeat product cards for other products -->
-    <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>$19.99</p>
-      <button onclick="addToCart(1)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
-    </div>
-    <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>$24.99</p>
-      <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
-    </div>
-    <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>$24.99</p>
-      <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
-    </div>
-    <div class="product-card">
-      <img src="../image/mr530sg_nb_03_i.webp" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>$24.99</p>
-      <button onclick="addToCart(2)">Add to Cart</button> <!-- Pass product ID to addToCart function -->
-    </div>
-    <!-- Repeat product cards for other products -->
   </div>
 
   <footer class="site-footer">

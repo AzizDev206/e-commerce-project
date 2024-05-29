@@ -16,18 +16,13 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">login</a>
+            <a class="nav-link" href="login.php">login</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -51,8 +46,8 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <a href="shopping chart.php" class="cart-link"> <!-- Link to the shopping cart page -->
-          <img class="chart" src="../image/shopping-cart.png"> Panier
+        <a href="shopping chart.php" class="cart-link"> 
+          <img class="chart" src="../image/shopping-cart.png"> Cart
         </a>
       </div>
     </div>
@@ -60,46 +55,36 @@
 
     <div class="container">
         <div class="sidebar">
-            <!-- Sidebar with category list -->
             <div class="category-list">
                 <h2>Categories</h2>
                 <ul>
-                    <li><a href="#">Phone and tablette</a></li>
-                    <li><a href="#">Beauty and health</a></li>
-                    <li><a href="#">Books</a></li>
+                    <li><a href="../php/phone.php">Phone and tablette</a></li>
+                    <li><a href="../php/books.php">Books</a></li>
 
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Sport</a></li>
+                    <li><a href="../php/music.php">Music</a></li>
 
-                    <!-- Add more categories as needed -->
                 </ul>
             </div>
         </div>
         <div class="content">
-            <!-- Featured product image with reduced price -->
             <div class="featured-product">
                 <img class="reduced_product" src="https://tn.jumia.is/cms/0000_Refresh2024/April/W18/UND/Fashion/TN_Gen_Slider.jpg" alt="Featured Product">
                 <div class="price">Reduced Price: 120Dt</div>
             </div>
-            <!-- End of featured product -->
-
-            <!-- Two card sections for publicity -->
+          
             <div class="publicity-card">
-                <!-- First publicity card -->
                 <div class="card">
                     <h2>Special Offer</h2>
                     <img src="https://tn.jumia.is/cms/0000_Refresh2024/April/W18/Boutique-Off/Beauty/TN_Gen_small-banner.gif">
                 </div>
             </div>
             <div class="publicity-card">
-                <!-- Second publicity card -->
                 <div class="card">
                     <h2>New Arrivals</h2>
                     <img src="https://tn.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/39/9017/1.jpg?3354">
                     <p style="color: blueviolet;">Price : 100 DT</p> 
                 </div>
             </div>
-            <!-- End of publicity cards -->
         </div>
     </div>
 
